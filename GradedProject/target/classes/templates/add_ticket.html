@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="Style.css"/>
+</head>
+<body class="center">
+	<form action="save_ticket" method="post">
+		<header class="headertext"><h1>Create Ticket </h1></header>
+		<br><br>
+		<label>Title</label>
+		<br>
+		<input  type= "number" name="id" placeholder="Enter the id" />
+		<br><br>
+		<label>Title</label>
+		<br>
+		<input  type= "text" name="ticketTitle" placeholder="Enter the title" />
+		<br><br>
+		<label for="ticketShortDescription">ShortDescription</label>
+		<br>
+		<textarea id="ticketShortDescription" name="ticketShortDescription" rows="8" cols="50" maxlength="1000" placeholder="Enter ticket description"></textarea>
+		<br><br>
+		<label >Content</label>
+		<br>
+		<input  type="text" name="ticketCreatedOn"/>
+		<input  type="datetime-local" name="ticketCreatedOn"/>
+		<br><br>
+		<button type="submit">Submit</button>
+	
+	</form>
+</body>
+</html>

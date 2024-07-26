@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+.homeBody{
+	background-color: #83A4CC;
+}
+
+.homeHeader{
+	background-color: #1E0B57;
+	padding: 30px;
+	color: #9F9DA3;
+}
+.homeHeadearA{
+	padding-left: 30px;
+}
+.homepage{
+	padding-left: 35px;
+}
+.homeTable{
+	margin: auto;
+	width: 95%;
+	height: 50%;
+}
+.homerow{
+	background-color: #221C2E;
+	color: #ffffff;
+}
+.deletebutton{
+	background-color: #F34554;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 5px 2px;
+	cursor: pointer;
+}
+.editbutton{
+	background-color: #1D0CF1;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 5px 2px;
+	cursor: pointer;
+}
+.viewbutton{
+	background-color: #09D4C1;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 5px 2px;
+	cursor: pointer;
+	
+}
+.center{
+	
+	background-color: #F0F6F6;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-60%, -60%);
+	width: 500px;
+	height: 525px;
+	border: 2px solid #000C0C;
+	padding: 20px;
+	margin: 20px;
+}
+.headertext{
+	text-align: center;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="Style.css"/>
+</head>
+<body class="homeBody">
+	<header class="homeHeader" ><b>Ticket Tracker Application</b>&ensp;
+	Tickets &ensp;
+	<a href="add_form" class="homeHeadearA">New_Ticket</a></header>
+	<br><br>
+	
+	<h1>List of Tickets</h1>
+	<br><br>
+	<form action="search_page" method="get" class="homepage">
+		
+	<input type="text" name="search" placeholder="Search ticket title here!"/>
+	<button>Search</button>
+	</form>
+	<br><br>
+	
+	<table border="1" class="homeTable">
+		<tr class="homerow">
+		<th>#</th>
+		<th>Ticket Title</th>
+		<th>Ticket Short Description</th>
+		<th>Ticket CreatedOn</th>
+		<th>Actions</th>
+		</tr>	
+		
+		<tr th:each="temp:${tickets}">
+			<td th:text="${temp.id}"></td>
+			<td th:text="${temp.ticketTitle}"></td>
+			<td th:text="${temp.ticketShortDescription}"></td>
+			<td th:text="${temp.ticketCreatedOn}"></td>
+			<td> <a th:href="@{edit_page(id=${temp.id})}" class="editbutton">Edit</a>
+			<a th:href="@{delete_page(id=${temp.id})}" class="deletebutton">Delete</a>
+			<a th:href="@{show_page(id=${temp.id})}" class="viewbutton">Views</a>
+		</tr>
+	</table>
+</body>
+</html>
